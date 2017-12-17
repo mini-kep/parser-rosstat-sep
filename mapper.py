@@ -19,6 +19,13 @@ rows = InterimCSV(year, month, 'main').from_csv()
 # TODO: write pseudocode for mapper()
 def mapper(year, month, d):
     pass
+#    results = []
+#    for val in COLUMNS_DEFAULT:
+#        name = make_name(val, d['name'])
+#        date = '-'.join((year, month))
+#        val = get_val_from_rows(rows)
+#        results.append(dict(name=name, date=date, value=val))
+#    return results
 
 assert mapper(year, month, d1) == [
     {'name': 'INDPRO_yoy', 'date': '2017-10', 'value': 100.0},         
